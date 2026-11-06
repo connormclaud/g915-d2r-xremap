@@ -1,0 +1,14 @@
+modmap:
+  - name: Diablo II G915 Remap
+    device:
+      only:
+        - "Logitech USB Receiver Keyboard"
+        - "Logitech G915 WIRELESS RGB MECHANICAL GAMING KEYBOARD"
+    application:
+      only:
+        - /steam_app_2536520/
+        - /(?i)d2r/
+        - /(?i)diablo/
+    remap:
+      KEY_CAPSLOCK: KEY_RIGHTBRACE
+      KEY_LEFTMETA: []

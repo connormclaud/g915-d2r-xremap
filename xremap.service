@@ -1,0 +1,12 @@
+[Unit]
+Description=xremap-kde key remapper
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/xremap-kde --watch=device,config --device "Logitech USB Receiver Keyboard,Logitech G915 WIRELESS RGB MECHANICAL GAMING KEYBOARD" %h/.config/xremap/config.yml
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target
